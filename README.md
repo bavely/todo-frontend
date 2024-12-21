@@ -18,7 +18,7 @@ This repository contains the frontend of the Todo List App built with **Next.js*
 
 - **Framework**: [Next.js](https://nextjs.org/) (App Router)
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS
+- **Styling**: Tailwind CSS, shadcn/ui
 - **HTTP Client**: Axios
 
 ---
