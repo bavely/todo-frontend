@@ -46,7 +46,8 @@ export default function Home() {
         {tasks.map((task) => (
           <li
             key={task.id}
-            className={`p-4 border rounded flex justify-between items-center ${`border-[${task.color}]/50`}`}
+            className={`p-4 border rounded flex justify-between items-center `}
+            style={{ borderColor: task.color }}
           >
             <TaskCard
               task={task}
