@@ -32,7 +32,7 @@ const TaskForm = (props: {
     "#FFFF00",
     "#FF00FF",
     "#00FFFF",
-    "#FFFFFF",
+    "#fbbf24",
 
   ];
 
@@ -96,7 +96,7 @@ const TaskForm = (props: {
           {" "}
           <ArrowLeft />
         </Link>
-        
+        <div className="flex flex-col space-y-4  items-center w-full ">
         <input
           type="text"
           placeholder="Task title"
@@ -127,6 +127,7 @@ const TaskForm = (props: {
         >
           {title === "" && color === "" ? "Create Task" : "Save Task"}
         </button>
+        </div>
       </div>
     </div>
   );
