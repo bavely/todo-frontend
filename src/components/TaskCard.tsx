@@ -21,12 +21,12 @@ const TaskCard = (props: {
         onChange={() => handleToggleCompleted(task.id, task.completed)}
       />
       <div
-        className=" w-full min-w-full flex flex-row items-center justify-between cursor-pointer mx-4 "
-        onClick={() => {
-          router.push(`/edit/${task.id}`);
-        }}
+        className=" w-full min-w-full flex flex-row items-center justify-between  mx-4 "
+   
       >
-        <div className="flex items-center space-x-4 basis-3/4">
+        <div className="flex items-center space-x-4 basis-3/4 cursor-pointer"      onClick={() => {
+          router.push(`/edit/${task.id}`);
+        }}>
           <span
             className={`  text-lg font-medium ${
               task.completed ? "line-through text-gray-500" : ""
