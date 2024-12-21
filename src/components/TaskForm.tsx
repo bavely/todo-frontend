@@ -33,6 +33,11 @@ const TaskForm = (props: {
     "#FF00FF",
     "#00FFFF",
     "#fbbf24",
+ 
+  "#0ea5e9",
+  "#1d4ed8",
+  "#818cf8"
+
 
   ];
 
@@ -100,11 +105,11 @@ const TaskForm = (props: {
         <input
           type="text"
           placeholder="Task title"
-          className="border border-gray-300 rounded px-2 py-1"
+          className="border border-gray-300 rounded px-2 py-1 w-full "
           value={title}
           onChange={handleTitleChange}
         />
-        <ul className="border border-gray-300 rounded px-2 py-1 flex space-x-2 ">
+        <ul className="border border-gray-300 rounded px-2 py-1 flex space-x-4 w-full">
           {colors.map((el) => (
             <li
               key={el}
@@ -112,7 +117,7 @@ const TaskForm = (props: {
                 backgroundColor: el,
                 border: color === el ? `2px solid black` : "none",
               }}
-              className="w-6 h-6 rounded-full cursor-pointer "
+              className="w-12 h-12 rounded-full cursor-pointer  "
               onClick={() => {
                 setColor(el);
               }}
@@ -121,7 +126,7 @@ const TaskForm = (props: {
         </ul>
 
         <button
-          className="bg-blue-500 text-white px-4 py-2 rounded "
+          className="bg-blue-500 text-white px-4 py-2 rounded w-full "
           onClick={handleTask}
           disabled={title === "" || color === ""}
         >
